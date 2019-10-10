@@ -12,4 +12,25 @@
   <p>中国語の発音：<%= @post.japanese_sound %></p>
 </p>
 
+
+<div>
+  <%= form_for( [@post, @post.comments.new] ) do |f| %>
+    <div class = "field">
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div class = "field">
+      <%= f.label :text %>
+      <%= f.text_area :text, size: "25x5" %>
+    </div>
+    <div class = "actions">
+      <%= f.submit "Add New Comment" %>
+    </div>
+  <% end %>
+</div>
+
+<div class = "comment">
+  <%= render @post.comments.order(created_at: :desc)  %>
+</div>
+
 <%= link_to 'Back', posts_path %>
