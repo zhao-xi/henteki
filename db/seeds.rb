@@ -36,3 +36,7 @@ Post.create! [
     japanese_sound: "にーわーだどんっはおだー",
     chinese_sound: "阿纳塔噶蒿路阿呐哇欧剋易带伊四"}
 ]
+
+Post.all.each do |p|
+    p.comments.create! name:"Zhao Xi", text:"Hey! Please leave your comment here!"
+end
