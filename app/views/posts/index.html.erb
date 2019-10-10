@@ -6,7 +6,7 @@
     <thead>
       <tr>
         <th style="width:40em">Japanese</th>
-        <th style="width:10em"> Know More </th>
+        <th style="width:10em"> </th>
         <th style="width:40em">Chinese</th>
       </tr>
     </thead>
@@ -15,7 +15,7 @@
       <% @posts.each do |post| %>
         <tr>
           <td><%= post.japanese %></td>
-          <td align="center"><%=link_to "Detail", post%></link_to></td>
+          <td align="center"><%=link_to "詳しく/详细", post%></link_to></td>
           <td><%= post.chinese %></td>
         </tr>
       <% end %>
