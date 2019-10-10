@@ -1,23 +1,27 @@
 <p id="notice"><%= notice %></p>
-
-<h1>HENTEKI</h1>
-
-<table border="1">
-  <thead>
-    <tr>
-      <th>Japanese</th>
-      <th>Chinese</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
+<div align="center">
+  <h1>HENTEKI</h1>
+  <p style="color:red">This website is promoted by Zhao Xi and Ohkawara Masaru.</p>
+  <table border="1">
+    <thead>
       <tr>
-        <td><%= post.japanese %></td>
-        <td><%= post.chinese %></td>
+        <th style="width:40em">Japanese</th>
+        <th style="width:10em"> Know More </th>
+        <th style="width:40em">Chinese</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
-
+    </thead>
+  
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td><%= post.japanese %></td>
+          <td align="center"><%=link_to "Detail", post%></link_to></td>
+          <td><%= post.chinese %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  <p>HENTEKI is an organization dedicated to promoting friendship between China and Japan.</p>
+</div>
 <br>
+

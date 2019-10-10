@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191010083838) do
+ActiveRecord::Schema.define(version: 20191010101001) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "japanese"
     t.string   "chinese"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.string   "japanese_sound"
+    t.string   "chinese_sound"
   end
 
 end

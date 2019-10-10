@@ -3,12 +3,13 @@
 <p>
   <strong>Japanese:</strong>
   <%= @post.japanese %>
+  <p>日语的读音是：<%= @post.chinese_sound %></p>
 </p>
 
 <p>
   <strong>Chinese:</strong>
   <%= @post.chinese %>
+  <p>中国語の発音：<%= @post.japanese_sound %></p>
 </p>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
