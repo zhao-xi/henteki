@@ -8,5 +8,7 @@
 Post.destroy_all
 
 Post.create! [
-    {japanese: "一つ目のパンダは三つ目の猫を舐めている", chinese: "独眼熊猫在舔三眼猫"}    
+    {japanese: "一つ目のパンダは三つ目の猫を舐めている", chinese: "独眼熊猫在舔三眼猫"},
+    {japanese: "彼はまだ飲み終わっていない", chinese: "他还没喝完"},
+    {japanese: "ちょっとパンダを食べる", chinese: "吃点熊猫"}
 ]
