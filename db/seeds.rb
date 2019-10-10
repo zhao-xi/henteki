@@ -14,5 +14,7 @@ Post.create! [
     {japanese: "早く言ってほしかった", chinese: "你早说啊"},
     {japanese: "あなたの腰の筋肉はなぜそんなに発達しているの？", chinese: "你腰上的肌肉为什么那么发达？"},
     {japanese: "八本の足をもつ猫はあなたを見ている", chinese: "八条腿的猫在看你"},
-    {japanese: "私は大きい方を持っている", chinese: "我有更大的"}
+    {japanese: "私は大きい方を持っている", chinese: "我有更大的"},
+    {japanese: "大きなヤギを食べたら私も大きくなりますか？", chinese: "吃了大山羊，我也会变大吗？"},
+    {japanese: "あなたが掘る穴が大きいです", chinese: "你挖的洞好大"}
 ]
