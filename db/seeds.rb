@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-#Post.create! [{japanese: "一つ目のパンダは三つ目の猫を舐めています", chinese: "独眼熊猫在舔三眼猫", japanese_sound: "どぅいぇんしゅんまおづぁいてぃえんさんいぇんまお"}]
 
 p = Post.create!(
         japanese:"あなたも一粒食べませんか？", chinese_sound:"阿纳塔摸黑涛次部塔呗吗森卡",
