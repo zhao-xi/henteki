@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-<h2><%=link_to "HENTEKI Homepage", root_path%></h2>
+<h2><%=link_to "HENTEKI Homepage", root_path, :style=> 'color:blue;'%></h2>
 
 
 <p>
@@ -35,4 +35,4 @@
   <%= render @post.comments.order(created_at: :desc)  %>
 </div>
 
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Back', posts_path, :style=> 'color:blue;' %>
