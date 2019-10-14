@@ -21,7 +21,7 @@
       <% @posts.each do |post| %>
         <tr>
           <td><%= post.japanese %></td>
-          <td align="center"><%=link_to "詳しく/详细", post%></link_to></td>
+          <td align="center"><%=link_to "詳しく/详细", post, :style=> 'color:blue;'%></link_to></td>
           <td><%= post.chinese %></td>
         </tr>
       <% end %>
