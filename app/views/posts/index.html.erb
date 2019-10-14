@@ -4,6 +4,7 @@
     color: green;
     font-size: 40px;
   }
+
 </style>
 <div align="center">
   <h1>HENTEKI</h1>
@@ -21,7 +22,7 @@
       <% @posts.each do |post| %>
         <tr>
           <td><%= post.japanese %></td>
-          <td align="center"><%=link_to "詳しく/详细", post, :style=> 'color:blue;'%></link_to></td>
+          <td align='center'><%=link_to "詳しく/详细", post, :style=>'color:black; border:2px solid green; text-decoration:none; '%></link_to></td>
           <td><%= post.chinese %></td>
         </tr>
       <% end %>
