@@ -1,8 +1,12 @@
 <p id="notice"><%= notice %></p>
 <h2><%=link_to "HENTEKI Homepage", root_path, :style=> 'color:blue;'%></h2>
 <style type="text/css">
-  .title {
-    color: black;
+  .title1 {
+    color: green;
+    font-size: 25px;
+  }
+  .title2{
+    color: blue;
     font-size: 25px;
   }
   .jp {
@@ -19,16 +23,16 @@
   }
 </style>
 <div id="jp-block">
-<p class="title">Japanese:</p>
+<p class="title1">Japanese:</p>
 <p class="jp"><%= @post.japanese %></p>
-<p class="title">日语的读音是：<p class="jp"><%= @post.chinese_sound %></p></p>
+<p class="title1">日语的读音是：<p class="jp"><%= @post.chinese_sound %></p></p>
 </div>
 <br>
 <br>
 <div id="cn-block">
-<p class="title">Chinese:</p>
+<p class="title2">Chinese:</p>
 <p class="cn"><%= @post.chinese %></p>
-<p class="title">中国語の発音：<p class="cn"><%= @post.japanese_sound %></p></p>
+<p class="title2">中国語の発音：<p class="cn"><%= @post.japanese_sound %></p></p>
 </div>
 <br>
 <br>
